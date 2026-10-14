@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name — Designer & Developer</title>
+<meta name="description" content="A simple personal website.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f4;--ink:#16221c;--muted:#5a6b62;--accent:#1f6f54;--line:#d5ded9}
+@media (prefers-color-scheme:dark){:root{--bg:#101815;--ink:#e8efeb;--muted:#9bada3;--accent:#5fc9a0;--line:#26352e}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+header strong{font-family:Fraunces,Georgia,serif;font-size:1.15rem}
+nav a{margin-left:20px;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(2.4rem,7vw,4rem);line-height:1.08;margin:0 0 20px;letter-spacing:-.02em}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:52ch;margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:500}
+.btn:hover{opacity:.9}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,Georgia,serif;font-size:1.6rem;margin:0 0 20px}
+.project{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.project:last-child{border:0}
+.project span{color:var(--muted)}
+footer{padding:40px 0 56px;color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <strong>Your Name</strong>
+    <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>I build clear, friendly things for the web.</h1>
+      <p>Hi, I'm Your Name. I design and develop websites and small apps that are fast, simple, and easy to use.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="project"><div>Neighborhood Bakery site</div><span>Website</span></div>
+      <div class="project"><div>Budget Tracker</div><span>Web app</span></div>
+      <div class="project"><div>Trail Notes</div><span>Mobile design</span></div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I've spent five years helping small businesses get online. I like plain language, quick load times, and layouts that work on any screen.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have a project in mind? Email me at <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Your Name</footer>
+</div>
+</body>
+</html>
